@@ -1,0 +1,105 @@
+// html файл 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание4</title>
+</head>
+<body>
+
+    <script src="js/main.js"></script>
+    <p>
+        <button name="One" onclick="OnClickButtonAlert(document.getElementById('ResText').value)"> Нажми на меня</button>
+        <input id="ResText" type="text" size="20" placeholder="Введите число!">   
+    </p>
+
+    <p>
+      <button id="buttonAdd" onclick="OnClickButtonAdd()"> Добавить строку</button>  
+      <button id="validButton" onclick="OnClickButtonValid()"> Валидация таблицы</button>
+    </p>
+    <table  border="1px" id="memberTable"  length="500">
+        <thead>
+            <tr>
+                <th>№ п\п</th>
+                <th>Имя</th>
+                <th>Фамилия</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+
+    </table>
+    
+    
+</body>
+</html>
+
+//JavaScript файл
+
+// JSON-строка
+const jsonString = '["Коля", "Вася", "Петя"]';
+const array = JSON.parse(jsonString);
+console.log(array[2]);
+
+// Вывод '111222333444555666777888999'
+var output =""
+for (let i = 1; i <= 9; i++) {
+    for (let j = 0; j < 3; j++) {
+        output += i;
+    }
+}
+document.write(output)
+
+//содержимое поля ввода, возведенное в квадрат
+function OnClickButtonAlert(str)
+{
+    if(!isNaN(Number(str)) && str)
+    {
+        alert(str*str)
+    }
+        
+}
+
+// добавление новой строки к таблице 
+function OnClickButtonAdd()
+{
+    const  table = document.getElementById("memberTable").getElementsByTagName("tbody")[0];
+    const  newRow = table.insertRow();
+    
+    let newCell = newRow.insertCell();
+    let inputString = document.createElement("input");
+    inputString.type = "text";
+    inputString.readOnly = true;
+    inputString.value = table.rows.length;
+    newCell.appendChild(inputString);
+
+    for (let i = 0; i < 2; i++) {
+        newCell = newRow.insertCell();
+        inputString = document.createElement("input");
+        inputString.type = "text";
+        newCell.appendChild(inputString);
+    }
+}
+
+// Валидация таблицы
+function OnClickButtonValid()
+{
+    const table = document.getElementById("memberTable").getElementsByTagName("tbody")[0];
+    const rows = table.rows;
+
+    for (let i = 0; i < rows.length; i++) {
+        const row = rows[i];
+
+        for (let j = 1; j < row.cells.length; j++) {
+            const text = row.cells[j].querySelector("input").value;
+            if(!text || text.length<2){
+                alert("Не выполнены все условия заполнения таблицы");
+                return 0
+            }
+        }
+    }
+    
+    alert("Успешно");
+}

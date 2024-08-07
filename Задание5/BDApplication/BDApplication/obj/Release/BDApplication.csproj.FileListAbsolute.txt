@@ -1,0 +1,12 @@
+C:\Users\SeaRook\Desktop\tasks\task5\BDApplication\BDApplication\bin\Release\BDApplication.exe.config
+C:\Users\SeaRook\Desktop\tasks\task5\BDApplication\BDApplication\bin\Release\BDApplication.exe
+C:\Users\SeaRook\Desktop\tasks\task5\BDApplication\BDApplication\bin\Release\BDApplication.pdb
+C:\Users\SeaRook\Desktop\tasks\task5\BDApplication\BDApplication\obj\Release\BDApplication.csproj.AssemblyReference.cache
+C:\Users\SeaRook\Desktop\tasks\task5\BDApplication\BDApplication\obj\Release\BDApplication.Forms.AddDepartment.resources
+C:\Users\SeaRook\Desktop\tasks\task5\BDApplication\BDApplication\obj\Release\BDApplication.Forms.AddEmployee.resources
+C:\Users\SeaRook\Desktop\tasks\task5\BDApplication\BDApplication\obj\Release\BDApplication.MainForm.resources
+C:\Users\SeaRook\Desktop\tasks\task5\BDApplication\BDApplication\obj\Release\BDApplication.Properties.Resources.resources
+C:\Users\SeaRook\Desktop\tasks\task5\BDApplication\BDApplication\obj\Release\BDApplication.csproj.GenerateResource.cache
+C:\Users\SeaRook\Desktop\tasks\task5\BDApplication\BDApplication\obj\Release\BDApplication.csproj.CoreCompileInputs.cache
+C:\Users\SeaRook\Desktop\tasks\task5\BDApplication\BDApplication\obj\Release\BDApplication.exe
+C:\Users\SeaRook\Desktop\tasks\task5\BDApplication\BDApplication\obj\Release\BDApplication.pdb
